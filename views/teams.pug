@@ -1,0 +1,91 @@
+  
+html
+  head
+    link(href='./css/main.css', rel='stylesheet')
+  body
+    // Navbar
+    header
+      .navbar
+        | Filmtube
+        button.logout Log out
+    // Sidebar
+    .sidebar
+      p.sidebarTitle Categories
+      a(href="#drama") Drama
+      br
+      a(href="#romance") Romance
+      br
+      a(href="#action") Action
+      br
+      a(href="#sci-fi") Sci-Fi
+    // General
+    .page
+      h1.pageTitle Movies
+      table
+        th#drama.sectionTitle Drama
+        tr
+          td
+            button Play
+          td The Green Mile 
+          td.timeLength 3h 9m
+        tr
+          td
+            button Play
+          td Forrest Gump
+          td.timeLength 2h 22m
+        tr
+          td
+            button Play
+          td Okja
+          td.timeLength 2h
+      table
+        th#romance.sectionTitle Romance
+        tr
+          td
+            button Play
+          td Titanic
+          td.timeLength 3h 15m
+        tr
+          td
+            button Play
+          td Twilight
+          td.timeLength 2h 2m
+        tr
+          td
+            button Play
+          td Casablanca
+          td.timeLength 1h 42m
+      table
+        th#action.sectionTitle Action
+        tr
+          td
+            button Play
+          td The Matrix
+          td.timeLength 2h 30m
+        tr
+          td
+            button Play
+          td Gladiator
+          td.timeLength 2h 51m
+        tr
+          td
+            button Play
+          td Predator
+          td.timeLength 1h 47m
+      table
+        th#sci-fi.sectionTitle Sci-Fi
+        tr
+          td
+            button Play
+          td Alien
+          td.timeLength 1h 57m
+        tr
+          td
+            button Play
+          td 2001
+          td.timeLength 2h 41m
+        tr
+          td
+            button Play
+          td Avatar
+          td.timeLength 2h 42m

@@ -1,0 +1,33 @@
+{
+  "name": "world_cup_2018_stats",
+  "version": "1.0.0",
+  "description": "Qualified teams stats",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "db:create": "createdb Qualified_teams && psql Qualified_teams < db/schema.sql",
+    "db:seed": "psql Qualified_teams < db/seed.sql",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "M. Amine Chant",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "pg-promise": "^7.5.2",
+    "pug": "^2.0.0-rc.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Achant/world_cup_2018_stats.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Achant/world_cup_2018_stats/issues"
+  },
+  "homepage": "https://github.com/Achant/world_cup_2018_stats#readme"
+}
